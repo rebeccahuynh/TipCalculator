@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+  </head>
+    <link rel ='styleSheet' href='css.css'>
+    <link rel ='reset' href='reset.css'>
+  <body>
+    <div class ='calculatorBox'>
+      <header><h1>Tip Calculator</h1></header>
+    <main>
+      <form>
+        <section>
+          <!-- Bill Amount Total Input-->
+          <p><label>Total Price of Bill</label></p>
+          <p><label>$ </label><input id = 'totalPriceInput' type='number' maxlength = '10' placeholder ='Bill Amount'></p>
+        </section>
+
+        <section>
+          <!--Service Quality Dropdown Menu Selection-->
+          <p><label>How was your Service?</label></p>           
+          <p><select id = 'serviceQualityForm'>
+            <option disabled selected value = '0'>--Choose an Option--</option>
+            <option value = '0.25'>Perfect- 25%</option>
+            <option value = '0.2'>Great!- 20%</option>
+            <option value = '0.15'>Pretty Good- 15%</option>
+            <option value = '0.1'>Meh/OK- 10%</option>
+            <option value = '0.05'>Really Bad- 5%</option>
+            </select>
+          </p>
+        </section>
+
+        <section>
+          <!-- Number of People that are being Split on the bill input -->
+          <p><label>How many people are on the bill?</label></p>
+          <p><input id ='peopleCountInput' maxlength = "10" type ='number' placeholder = '# of People'/></p>
+        </section>
+        
+        <section>
+        <!-- Calculate Button-->
+          <button type = 'button' id = 'calculate'>Calculate</button>
+          <input type = 'reset' id = 'reset' value = "Clear Form">
+        </section>
+      </form>
+
+        <section>
+        <!-- Results should display here-->
+          <fieldset><legend><label>Results</label></legend>
+           <div id='results'></div>
+             <!-- The results message will display in here-->
+           </fieldset>
+          </section>
+    
+    </main>
+  </body>
+       <script src="javascript.js"></script>
+    </div>
+</html>

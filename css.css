@@ -1,0 +1,116 @@
+h1 {
+  background: black;
+  font-family:helvetica;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: thin;
+  border-color: limegreen;
+  text-align: center;
+  color: limegreen;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  margin-bottom: 1.5em;
+}
+
+body {
+  padding-top:6em;
+  background-image: url("https://media3.giphy.com/media/quEsMOrr3hmQ8/giphy.gif?cid=790b76116d5a58c2319e6566c22fc3cc9efd5e417c8bbd57&rid=giphy.gif");
+}
+
+#totalPriceInput, #serviceQualityForm, #peopleCountInput {
+  margin-bottom: .75em;
+}
+
+.calculatorBox {
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  background: black;
+  height: 700px;
+  width: 400px;
+  border-style: solid;
+  border-color: limegreen;
+  border-width: 2px;
+  color: limegreen;
+}
+
+
+input, select{
+  background: black;
+  color: limegreen;
+  font: 20px courier;
+  height: 25px;
+  width: 300px;
+  border-color: limegreen;
+}
+
+button, #reset {
+  margin-right: 1em;
+  margin-left: 1em;
+  background:limegreen;
+  border: thin black; 
+  width: 125px;
+  height: 40px;
+  color: black;
+  display: inline-block;
+  font: normal normal 12px "courier", serif;
+  text-align: center;
+  text-shadow: 0.25px 0.25px #585858;
+}
+
+button:hover, #reset:hover{
+  background:black;
+  color: limegreen;
+  border: 1px solid limegreen;
+}
+
+label {  
+  font: bold 17px "courier";
+}
+
+legend {
+   text-align: left;
+}
+
+fieldset {
+  border-color: limegreen;
+  color: limegreen;
+  height: 150px;
+  width: 340px;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+#results:before{
+  padding-bottom: .5em;
+  display: block;
+  content: 'PLEASE TIP:';
+  font-size: 15px;
+}
+
+#results{
+  display: block;
+  text-transform: uppercase;
+  font: bold 60px "verdana";
+  line-height: 40px;
+}
+
+#results:after{
+  padding-top: .5em;
+  display: block;
+  content: 'PER PERSON';
+  font-size: 15px;
+}
+
+#localLink{
+  font-size: 13px;
+  font-family: courier;
+  color: limegreen;
+}
+
+#localLink:hover{
+  color: green;
+}
