@@ -54,3 +54,16 @@ function clearResults(){
 document.getElementById('reset').onclick = function (){
   clearResults ();
 };
+
+//Local Storage Counter on page refresh
+var usageCounter = localStorage.getItem('usageCounter');
+
+if (usageCounter === null){
+  usageCounter = 0;
+}
+
+usageCounter ++;
+
+localStorage.setItem('usageCounter', usageCounter);
+
+document.getElementById('counterDisplay').innerHTML = 'This page has been used: ' + usageCounter + ' times.';
